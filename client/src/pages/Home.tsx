@@ -8,6 +8,12 @@ import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, MapPin, Phone, Clock } from "lucide-react";
 import { Link } from "wouter";
 
+// Import stock images for the new lifestyle section
+import barLife1 from "@/assets/images/bar_life_1.jpg";
+import barLife2 from "@/assets/images/bar_life_2.jpg";
+import drinks1 from "@/assets/images/drinks_1.jpg";
+import drinks2 from "@/assets/images/drinks_2.jpg";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground font-sans selection:bg-primary/30">
@@ -30,6 +36,35 @@ export default function Home() {
         </section>
 
         <Features />
+        
+        {/* New Lifestyle / Atmosphere Grid */}
+        <section className="py-12 bg-black">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 h-[600px]">
+              <div className="md:col-span-2 relative overflow-hidden group rounded-2xl">
+                <img src={barLife1} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Bar Life" />
+                <div className="absolute inset-0 bg-black/40 flex items-end p-8">
+                  <h3 className="text-2xl font-serif text-white uppercase tracking-widest">Electric Nights</h3>
+                </div>
+              </div>
+              <div className="md:col-span-1 relative overflow-hidden group rounded-2xl">
+                <img src={drinks1} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Signature Drink" />
+                <div className="absolute inset-0 bg-black/40 flex items-end p-8">
+                  <h3 className="text-xl font-serif text-white uppercase tracking-widest">Crafted Spirits</h3>
+                </div>
+              </div>
+              <div className="md:col-span-1 grid grid-rows-2 gap-4">
+                <div className="relative overflow-hidden group rounded-2xl">
+                  <img src={barLife2} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Vibe" />
+                </div>
+                <div className="relative overflow-hidden group rounded-2xl">
+                  <img src={drinks2} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Cheers" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <FeaturedMenu />
         <Ambience />
         <Testimonials />

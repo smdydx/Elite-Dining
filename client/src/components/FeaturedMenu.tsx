@@ -5,6 +5,14 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
+// Import downloaded stock images
+import drinks1 from "@/assets/images/drinks_1.jpg";
+import drinks2 from "@/assets/images/drinks_2.jpg";
+import drinks3 from "@/assets/images/drinks_3.jpg";
+import barLife1 from "@/assets/images/bar_life_1.jpg";
+import barLife2 from "@/assets/images/bar_life_2.jpg";
+import barLife3 from "@/assets/images/bar_life_3.jpg";
+
 export default function FeaturedMenu() {
   const categories = [
     { id: "signature", label: "Signature" },
@@ -19,7 +27,7 @@ export default function FeaturedMenu() {
       name: "Spicy Salmon Salad",
       price: "189",
       description: "Fresh salmon with spicy Thai herbs and lime dressing",
-      image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=2680&auto=format&fit=crop",
+      image: barLife1,
     },
     {
       id: 2,
@@ -27,7 +35,7 @@ export default function FeaturedMenu() {
       name: "Fried Sea Bass",
       price: "399",
       description: "Deep fried sea bass served with special fish sauce",
-      image: "https://images.unsplash.com/photo-1534939561126-855b8675edd7?q=80&w=2574&auto=format&fit=crop",
+      image: drinks3,
     },
     {
       id: 3,
@@ -35,7 +43,7 @@ export default function FeaturedMenu() {
       name: "Sangsom Set",
       price: "1,599",
       description: "700ml Bottle + 4 Mixers + Ice + Snack",
-      image: "https://images.unsplash.com/photo-1563223552-30d013dd9ca1?q=80&w=2546&auto=format&fit=crop",
+      image: drinks1,
     },
     {
       id: 4,
@@ -43,7 +51,7 @@ export default function FeaturedMenu() {
       name: "Salmon Wasabi",
       price: "139",
       description: "Fresh salmon served with premium wasabi sauce",
-      image: "https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=2525&auto=format&fit=crop",
+      image: barLife2,
     },
     {
       id: 5,
@@ -51,7 +59,7 @@ export default function FeaturedMenu() {
       name: "Regency Set",
       price: "1,299",
       description: "350ml Bottle + 4 Mixers + Ice + Snack",
-      image: "https://images.unsplash.com/photo-1566650453360-6dd8601c40b7?q=80&w=2574&auto=format&fit=crop",
+      image: drinks2,
     },
      {
       id: 6,
@@ -59,7 +67,7 @@ export default function FeaturedMenu() {
       name: "Fried Chicken Wings",
       price: "159",
       description: "Crispy fried wings marinated in special house sauce",
-      image: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?q=80&w=2580&auto=format&fit=crop",
+      image: barLife3,
     },
   ];
 
